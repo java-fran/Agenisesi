@@ -17,4 +17,9 @@ public class TurmaService {
     public List<Turma> listarTodos(){
         return turmaRepository.findAll();
     }
+
+     public Turma salvar(Turma turma){
+        return turmaRepository.save(turma);
+    }
+
 }

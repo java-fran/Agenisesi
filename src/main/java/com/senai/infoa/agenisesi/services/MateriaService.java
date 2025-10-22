@@ -17,4 +17,9 @@ public class MateriaService {
     public List<Materia> listarTodos(){
         return materiaRepository.findAll();
     }
+
+     public Materia salvar(Materia materia){
+        return materiaRepository.save(materia);
+    }
+
 }

@@ -17,4 +17,9 @@ public class TarefaService {
     public List<Tarefa> listarTodos(){
         return tarefaRepository.findAll();
     }
+
+     public Tarefa salvar(Tarefa tarefa){
+        return tarefaRepository.save(tarefa);
+    }
+
 }
