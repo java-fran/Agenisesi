@@ -18,7 +18,7 @@ import io.swagger.v3.oas.annotations.parameters.RequestBody;
 @RequestMapping("/professor")
 public class ProfessorController {
     
-     @Autowired
+    @Autowired
     private ProfessorService professorService;
 
     @PostMapping("/cadastro")
